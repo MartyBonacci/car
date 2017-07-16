@@ -36,7 +36,7 @@
 					}
 				}
 				$honda = new Car("Honda",6);
-				$honda->setCylinders(7);
+				$honda->setCylinders(12);
 				echo $honda->getCylinders()."<br />";
 				echo $honda->getModel()."<br />";
 
