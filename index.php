@@ -19,8 +19,6 @@
 						return($this->model);
 					}
 
-
-
 					public function setCylinders ($newCylinders) {
 						if($newCylinders <= 0 || $newCylinders % 2 != 0) {
 							throw(new Exception('Cylinders must be even, except for the Audi RS2, Yugo...'));
@@ -36,17 +34,14 @@
 						$this->setModel($newModel);
 						$this->setCylinders($newCylinders);
 					}
-
-					public function __toString() {
-						return($this->model+$this->cylinders);
-					}
 				}
 				$honda = new Car("Honda",6);
 				$honda->setCylinders(12);
 				echo $honda->getCylinders()."<br />";
 				echo $honda->getModel()."<br />";
 				$honda->setCylinders(4);
-				echo $honda;
+				echo $honda->getCylinders()."<br />";
+				echo $honda->getModel()."<br />";
 
 			?>
 		</body>
